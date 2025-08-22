@@ -8,5 +8,5 @@ def health_view(_):
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("health/", health_view, name="health"),
-
+    path("api/", include("taxi.urls")),
 ]
