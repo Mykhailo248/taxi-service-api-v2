@@ -1,0 +1,27 @@
+### List cars
+GET http://127.0.0.1:8000/api/cars/
+
+### Create car
+POST http://127.0.0.1:8000/api/cars/
+Content-Type: application/json
+
+{
+  "manufacturer": "Toyota",
+  "model": "Corolla",
+  "license_plate": "AA1234BB",
+  "drivers": []
+}
+
+### Retrieve car
+GET http://127.0.0.1:8000/api/cars/1/
+
+### Update car
+PATCH http://127.0.0.1:8000/api/cars/1/
+Content-Type: application/json
+
+{
+  "model": "Corolla Hybrid"
+}
+
+### Delete car
+DELETE http://127.0.0.1:8000/api/cars/1/
