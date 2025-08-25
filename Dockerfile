@@ -11,6 +11,7 @@ WORKDIR /app
 # Встановлюємо системні пакети
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
 
 # Копіюємо залежності
